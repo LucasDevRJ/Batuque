@@ -16,5 +16,7 @@ public class Principal {
         musica.reproduzir();
         musica.encerrar();
         musica.encerrar();
+        musica.adiciona(musica);
+        musica.exibeTempoTotalDeReproducoes();
     }
 }
