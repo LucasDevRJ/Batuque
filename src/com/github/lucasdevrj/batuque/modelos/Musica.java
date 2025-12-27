@@ -35,16 +35,16 @@ public class Musica extends Audio implements Classificavel {
         int classificacao = classifica(audio);
         switch (classificacao) {
             case 1:
-                System.out.println("A música " + audio.getTitulo() + " ficou em primeiro lugar! É a mais escutado no momento.");
+                System.out.println("A música \"" + audio.getTitulo() + "\" ficou em primeiro lugar! É a mais escutado no momento.");
                 break;
             case 2:
-                System.out.println("A música " + audio.getTitulo() + " ficou em segundo lugar! É uma das mais escutados no momento.");
+                System.out.println("A música \"" + audio.getTitulo() + "\" ficou em segundo lugar! É uma das mais escutados no momento.");
                 break;
             case 3:
-                System.out.println("A música " + audio.getTitulo() + " ficou em terceiro lugar! É uma das mais escutados no momento.");
+                System.out.println("A música \"" + audio.getTitulo() + "\" ficou em terceiro lugar! É uma das mais escutados no momento.");
                 break;
             default:
-                System.out.println("A música " + audio.getTitulo() + " não está no TOP 3.");
+                System.out.println("A música \"" + audio.getTitulo() + "\" não está no TOP 3.");
         }
     }
 }

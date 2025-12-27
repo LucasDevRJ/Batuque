@@ -30,6 +30,28 @@ public class Principal {
         musica.classifica(musica);
         musica.exibeClassificacao(musica);
 
+        Musica musica2 = new Musica();
+        musica2.setTitulo("Señorita");
+        musica2.setArtista("Shawn Mendes, Camila Cabello");
+        musica2.setDuracao(3);
+        musica2.reproduzir();
+        musica2.encerrar();
+        musica2.reproduzir();
+        musica2.encerrar();
+        musica2.reproduzir();
+        musica2.adiciona(musica2);
+        musica2.adiciona(musica2);
+        musica2.adiciona(musica2);
+        musica2.adiciona(musica2);
+
+        musica2.curtir();
+        musica2.curtir();
+        musica2.classifica(musica2);
+        musica2.exibeClassificacao(musica2);
+        musica2.exibirInformacoesGerais();
+        System.out.println("Total de reproduções = " + musica2.getTotalDeReproducoes());
+        musica2.exibeTempoTotalDeReproducoes();
+
         Podcast podcast = new Podcast();
         podcast.setApresentador("Paulo Silveira");
         podcast.setTitulo("Livros de Tecnologia que amamos - Hipsters Ponto Tech");
@@ -49,5 +71,7 @@ public class Principal {
         podcast.diminuirVelocidadeDeReproducao();
         podcast.diminuirVelocidadeDeReproducao();
         podcast.diminuirVelocidadeDeReproducao();
+
+        podcast.exibeClassificacao(podcast);
     }
 }

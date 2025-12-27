@@ -50,16 +50,16 @@ public class Podcast extends Audio implements Classificavel {
         int classificacao = classifica(audio);
         switch (classificacao) {
             case 1:
-                System.out.println("O Podcast " + audio.getTitulo() + " ficou em primeiro lugar! É o mais escutado no momento.");
+                System.out.println("O Podcast \"" + audio.getTitulo() + "\" ficou em primeiro lugar! É o mais escutado no momento.");
                 break;
             case 2:
-                System.out.println("O Podcast " + audio.getTitulo() + " ficou em segundo lugar! É um dos mais escutados no momento.");
+                System.out.println("O Podcast \"" + audio.getTitulo() + "\" ficou em segundo lugar! É um dos mais escutados no momento.");
                 break;
             case 3:
-                System.out.println("O Podcast" + audio.getTitulo() + " ficou em terceiro lugar! É um dos mais escutados no momento.");
+                System.out.println("O Podcast \"" + audio.getTitulo() + "\" ficou em terceiro lugar! É um dos mais escutados no momento.");
                 break;
             default:
-                System.out.println("O Podcast" + audio.getTitulo() + " não está no TOP 3.");
+                System.out.println("O Podcast \"" + audio.getTitulo() + "\" não está no TOP 3.");
         }
     }
 }

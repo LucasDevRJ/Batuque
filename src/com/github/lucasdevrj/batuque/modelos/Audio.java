@@ -36,6 +36,10 @@ public class Audio implements CalculadoraDeTempo {
         return curtidas;
     }
 
+    public int getClassificacao() {
+        return tempoTotalReproduzido / totalDeReproducoes;
+    }
+
     public void curtir() {
         System.out.println("Você curtiu \"" + titulo + "\" com sucesso.");
         curtidas++;
@@ -67,6 +71,19 @@ public class Audio implements CalculadoraDeTempo {
         } else {
             System.out.println("O \"" + titulo + "\" não está sendo reproduzido, por isso não é possível encerra-lo.");
         }
+    }
+
+    public void exibirInformacoesGerais() {
+        String informacoes = """
+                --------------------|Informações Gerais|--------------------
+                Nome: %s
+                Duração: %d minutos
+                Total de Reproduções: %d
+                Total de Curtidas: %d
+                Classificação: "%d" de 100
+                ------------------------------------------------------------
+                """.formatted(titulo, duracao, totalDeReproducoes, curtidas, getClassificacao());
+        System.out.println(informacoes);
     }
 
     @Override
