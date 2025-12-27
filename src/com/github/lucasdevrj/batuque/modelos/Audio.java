@@ -43,7 +43,16 @@ public class Audio {
             System.out.println("Você pausou o \"" + titulo + "\".");
             estaReproduzindo = false;
         } else {
-            System.out.println("O \"" + titulo + "\" não está sendo reproduzido.");
+            System.out.println("O \"" + titulo + "\" não está sendo reproduzido, por isso não é possível pausa-lo.");
+        }
+    }
+
+    public void encerrar() {
+        if (estaReproduzindo) {
+            System.out.println("Você encerrou o \"" + titulo + "\".");
+            estaReproduzindo = false;
+        } else {
+            System.out.println("O \"" + titulo + "\" não está sendo reproduzido, por isso não é possível encerra-lo.");
         }
     }
 
