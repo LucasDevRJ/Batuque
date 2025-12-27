@@ -28,6 +28,10 @@ public class Audio implements CalculadoraDeTempo {
         this.duracao = duracao;
     }
 
+    public int getTotalDeReproducoes() {
+        return totalDeReproducoes;
+    }
+
     public int getCurtidas() {
         return curtidas;
     }
@@ -73,7 +77,13 @@ public class Audio implements CalculadoraDeTempo {
     @Override
     public void exibeTempoTotalDeReproducoes() {
         System.out.println("--------------------|Tempo Total Reproduzido|--------------------");
-        System.out.printf("Você reproduziu %d minutos no total.\n", tempoTotalReproduzido);
+        if (tempoTotalReproduzido >= 60) {
+            int horas = tempoTotalReproduzido / 60;
+            int minutos = tempoTotalReproduzido % 60;
+            System.out.printf("Você reproduziu %d hora(s) e %d minuto(s) no total.\n", horas, minutos);
+        } else {
+            System.out.printf("Você reproduziu %d minutos no total.\n", tempoTotalReproduzido);
+        }
         System.out.println("-----------------------------------------------------------------");
     }
 }

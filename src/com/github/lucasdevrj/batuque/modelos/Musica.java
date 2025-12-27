@@ -1,6 +1,6 @@
 package com.github.lucasdevrj.batuque.modelos;
 
-import com.github.lucasdevrj.batuque.calculos.Classificavel;
+import com.github.lucasdevrj.batuque.classificacao.Classificavel;
 
 public class Musica extends Audio implements Classificavel {
 
@@ -35,16 +35,16 @@ public class Musica extends Audio implements Classificavel {
         int classificacao = classifica(audio);
         switch (classificacao) {
             case 1:
-                System.out.println("O " + audio.getTitulo() + " ficou em primeiro lugar! É o mais escutado no momento.");
+                System.out.println("A música " + audio.getTitulo() + " ficou em primeiro lugar! É a mais escutado no momento.");
                 break;
             case 2:
-                System.out.println("O " + audio.getTitulo() + " ficou em segundo lugar! É um dos mais escutados no momento.");
+                System.out.println("A música " + audio.getTitulo() + " ficou em segundo lugar! É uma das mais escutados no momento.");
                 break;
             case 3:
-                System.out.println("O " + audio.getTitulo() + " ficou em terceiro lugar! É um dos mais escutados no momento.");
+                System.out.println("A música " + audio.getTitulo() + " ficou em terceiro lugar! É uma das mais escutados no momento.");
                 break;
             default:
-                System.out.println("O " + audio.getTitulo() + " não está no TOP 3.");
+                System.out.println("A música " + audio.getTitulo() + " não está no TOP 3.");
         }
     }
 }

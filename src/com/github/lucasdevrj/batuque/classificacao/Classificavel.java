@@ -1,4 +1,4 @@
-package com.github.lucasdevrj.batuque.calculos;
+package com.github.lucasdevrj.batuque.classificacao;
 
 import com.github.lucasdevrj.batuque.modelos.Audio;
 

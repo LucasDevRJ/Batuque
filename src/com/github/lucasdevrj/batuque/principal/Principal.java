@@ -1,9 +1,13 @@
 package com.github.lucasdevrj.batuque.principal;
 
+import com.github.lucasdevrj.batuque.modelos.Audio;
 import com.github.lucasdevrj.batuque.modelos.Musica;
+import com.github.lucasdevrj.batuque.modelos.Podcast;
 
 public class Principal {
     public static void main(String[] args) {
+        Audio audio = new Audio();
+
         Musica musica = new Musica();
         musica.setTitulo("I Gotta Feeling");
         musica.setArtista("Black Eyed Peas");
@@ -19,11 +23,20 @@ public class Principal {
         musica.encerrar();
         musica.encerrar();
         musica.reproduzir();
-        musica.adiciona(musica);
-        musica.adiciona(musica);
-        musica.exibeTempoTotalDeReproducoes();
+        audio.adiciona(musica);
+        audio.adiciona(musica);
+        audio.exibeTempoTotalDeReproducoes();
         musica.exibeInformacoes();
         musica.classifica(musica);
         musica.exibeClassificacao(musica);
+
+        Podcast podcast = new Podcast();
+        podcast.setApresentador("Paulo Silveira");
+        podcast.setTitulo("Livros de Tecnologia que amamos - Hipsters Ponto Tech");
+        podcast.setDuracao(45);
+        podcast.reproduzir();
+        audio.adiciona(podcast);
+        audio.adiciona(podcast);
+        audio.exibeTempoTotalDeReproducoes();
     }
 }
