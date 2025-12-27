@@ -29,14 +29,13 @@ public class Audio implements CalculadoraDeTempo {
         this.duracao = duracao;
     }
 
+    public int getCurtidas() {
+        return curtidas;
+    }
+
     public void curtir() {
-        if (!foiCurtido) {
-            System.out.println("Você curtiu \"" + titulo + "\" com sucesso.");
-            foiCurtido = true;
-            curtidas++;
-        } else {
-            System.out.println("Você já curtiu o \"" + titulo + "\".");
-        }
+        System.out.println("Você curtiu \"" + titulo + "\" com sucesso.");
+        curtidas++;
     }
 
     public void reproduzir() {
