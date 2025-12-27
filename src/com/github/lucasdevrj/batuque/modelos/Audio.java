@@ -10,7 +10,6 @@ public class Audio implements CalculadoraDeTempo {
     private int curtidas;
     private int classificacao;
     private boolean estaReproduzindo;
-    private boolean foiCurtido;
     private int tempoTotalReproduzido;
 
     public String getTitulo() {
@@ -68,7 +67,6 @@ public class Audio implements CalculadoraDeTempo {
 
     @Override
     public int adiciona(Audio audio) {
-        System.out.println("Você adicionou o \"" + titulo + "\" ao tempo total de reprodução.");
         return tempoTotalReproduzido += audio.getDuracao();
     }
 

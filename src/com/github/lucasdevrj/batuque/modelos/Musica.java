@@ -4,9 +4,9 @@ import com.github.lucasdevrj.batuque.calculos.Classificavel;
 
 public class Musica extends Audio implements Classificavel {
 
-    private Artista artista;
+    private String artista;
 
-    public void setArtista(Artista artista) {
+    public void setArtista(String artista) {
         this.artista = artista;
     }
 
@@ -14,7 +14,7 @@ public class Musica extends Audio implements Classificavel {
         System.out.println("--------------------|Informações sobre a Música|--------------------");
         System.out.println("Música: " + super.getTitulo());
         System.out.println("Duração: " + super.getDuracao() + " minutos");
-        System.out.println("Artista: " + artista.getNome());
+        System.out.println("Artista: " + artista);
         System.out.println("--------------------------------------------------------------------");
     }
 
