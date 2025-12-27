@@ -5,9 +5,32 @@ import com.github.lucasdevrj.batuque.classificacao.Classificavel;
 public class Podcast extends Audio implements Classificavel {
 
     private String apresentador;
+    private double velocidadeDeReproducao = 1.0;
 
     public void setApresentador(String apresentador) {
         this.apresentador = apresentador;
+    }
+
+    public double getVelocidadeDeReproducao() {
+        return velocidadeDeReproducao;
+    }
+
+    public void aumentarVelocidadeDeReproducao() {
+       if (velocidadeDeReproducao < 3.0) {
+           velocidadeDeReproducao += 0.5;
+           System.out.println("Você está escutando o Podcast " + getTitulo() + " na velocidade de reprodução " + getVelocidadeDeReproducao() + "x.");
+       } else {
+           System.out.println("Você já atingiu a velocidade máxima permitida.");
+       }
+    }
+
+    public void diminuirVelocidadeDeReproducao() {
+        if (velocidadeDeReproducao > 0.5) {
+            velocidadeDeReproducao -= 0.5;
+            System.out.println("Você está escutando o Podcast " + getTitulo() + " na velocidade de reprodução " + getVelocidadeDeReproducao() + "x.");
+        } else {
+            System.out.println("Você já atingiu a velocidade mínima permitida.");
+        }
     }
 
     @Override

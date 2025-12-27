@@ -38,5 +38,16 @@ public class Principal {
         audio.adiciona(podcast);
         audio.adiciona(podcast);
         audio.exibeTempoTotalDeReproducoes();
+        podcast.aumentarVelocidadeDeReproducao();
+        podcast.aumentarVelocidadeDeReproducao();
+        podcast.aumentarVelocidadeDeReproducao();
+        podcast.aumentarVelocidadeDeReproducao();
+        podcast.aumentarVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
+        podcast.diminuirVelocidadeDeReproducao();
     }
 }
