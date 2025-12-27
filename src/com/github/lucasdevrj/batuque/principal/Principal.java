@@ -11,5 +11,7 @@ public class Principal {
         musica.reproduzir();
         musica.curtir();
         musica.curtir();
+        musica.pausar();
+        musica.pausar();
     }
 }

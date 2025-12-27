@@ -38,4 +38,13 @@ public class Audio {
         }
     }
 
+    public void pausar() {
+        if (estaReproduzindo) {
+            System.out.println("Você pausou o \"" + titulo + "\".");
+            estaReproduzindo = false;
+        } else {
+            System.out.println("O \"" + titulo + "\" não está sendo reproduzido.");
+        }
+    }
+
 }
