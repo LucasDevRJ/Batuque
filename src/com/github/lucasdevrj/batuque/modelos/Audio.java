@@ -13,6 +13,10 @@ public class Audio implements CalculadoraDeTempo {
     private boolean foiCurtido;
     private int tempoTotalReproduzido;
 
+    public String getTitulo() {
+        return titulo;
+    }
+
     public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
@@ -71,6 +75,8 @@ public class Audio implements CalculadoraDeTempo {
 
     @Override
     public void exibeTempoTotalDeReproducoes() {
-        System.out.printf("Você reproduziu %d minutos no total.", tempoTotalReproduzido);
+        System.out.println("--------------------|Tempo Total Reproduzido|--------------------");
+        System.out.printf("Você reproduziu %d minutos no total.\n", tempoTotalReproduzido);
+        System.out.println("-----------------------------------------------------------------");
     }
 }
