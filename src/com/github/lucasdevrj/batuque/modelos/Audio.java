@@ -10,7 +10,7 @@ public class Audio {
     private int curtidas;
     private int classificacao;
     private boolean estaReproduzindo;
-    private int tempoTotalReproduzido;
+    private CalculadoraDeTempo calculadoraDeTempo;
 
     public String getTitulo() {
         return titulo;
@@ -36,8 +36,12 @@ public class Audio {
         return curtidas;
     }
 
+    public void setCalculadoraDeTempo(CalculadoraDeTempo calculadoraDeTempo) {
+        this.calculadoraDeTempo = calculadoraDeTempo;
+    }
+
     public int getClassificacao() {
-        return tempoTotalReproduzido / totalDeReproducoes;
+        return calculadoraDeTempo.getTempoTotalReproduzido() / totalDeReproducoes;
     }
 
     public void curtir() {

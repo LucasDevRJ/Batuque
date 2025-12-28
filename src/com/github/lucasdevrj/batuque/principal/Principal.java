@@ -12,6 +12,7 @@ public class Principal {
         Musica musica = new Musica();
         musica.setTitulo("I Gotta Feeling");
         musica.setArtista("Black Eyed Peas");
+        musica.setCalculadoraDeTempo(calculadoraDeTempo);
         musica.setDuracao(4);
         musica.reproduzir();
         musica.reproduzir();
@@ -34,12 +35,12 @@ public class Principal {
         Musica musica2 = new Musica();
         musica2.setTitulo("Señorita");
         musica2.setArtista("Shawn Mendes, Camila Cabello");
+        musica2.setCalculadoraDeTempo(calculadoraDeTempo);
         musica2.setDuracao(3);
         musica2.reproduzir();
         musica2.encerrar();
         musica2.reproduzir();
         musica2.encerrar();
-        musica2.reproduzir();
         calculadoraDeTempo.adiciona(musica2);
         calculadoraDeTempo.adiciona(musica2);
         calculadoraDeTempo.adiciona(musica2);
@@ -52,13 +53,13 @@ public class Principal {
         musica2.classifica(musica2);
         musica2.exibeClassificacao(musica2);
         musica2.exibirInformacoesGerais();
-        System.out.println("Total de reproduções = " + musica2.getTotalDeReproducoes());
         calculadoraDeTempo.exibeTempoTotalDeReproducoes();
 
         Podcast podcast = new Podcast();
         podcast.setApresentador("Paulo Silveira");
         podcast.setTitulo("Livros de Tecnologia que amamos - Hipsters Ponto Tech");
         podcast.setDuracao(45);
+        podcast.setCalculadoraDeTempo(calculadoraDeTempo);
         podcast.reproduzir();
         calculadoraDeTempo.adiciona(podcast);
         calculadoraDeTempo.adiciona(podcast);

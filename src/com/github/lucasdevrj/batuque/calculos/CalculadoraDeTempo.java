@@ -6,6 +6,10 @@ public class CalculadoraDeTempo {
 
     private int tempoTotalReproduzido;
 
+    public int getTempoTotalReproduzido() {
+        return tempoTotalReproduzido;
+    }
+
     public int adiciona(Audio audio) {
         return tempoTotalReproduzido += audio.getDuracao();
     }
