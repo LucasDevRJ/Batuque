@@ -46,6 +46,8 @@ public class Principal {
 
         musica2.curtir();
         musica2.curtir();
+        musica2.curtir();
+        musica2.curtir();
         musica2.classifica(musica2);
         musica2.exibeClassificacao(musica2);
         musica2.exibirInformacoesGerais();
