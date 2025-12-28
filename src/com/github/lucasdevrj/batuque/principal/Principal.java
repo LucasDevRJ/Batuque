@@ -1,12 +1,13 @@
 package com.github.lucasdevrj.batuque.principal;
 
+import com.github.lucasdevrj.batuque.calculos.CalculadoraDeTempo;
 import com.github.lucasdevrj.batuque.modelos.Audio;
 import com.github.lucasdevrj.batuque.modelos.Musica;
 import com.github.lucasdevrj.batuque.modelos.Podcast;
 
 public class Principal {
     public static void main(String[] args) {
-        Audio audio = new Audio();
+        CalculadoraDeTempo calculadoraDeTempo = new CalculadoraDeTempo();
 
         Musica musica = new Musica();
         musica.setTitulo("I Gotta Feeling");
@@ -23,9 +24,9 @@ public class Principal {
         musica.encerrar();
         musica.encerrar();
         musica.reproduzir();
-        audio.adiciona(musica);
-        audio.adiciona(musica);
-        audio.exibeTempoTotalDeReproducoes();
+        calculadoraDeTempo.adiciona(musica);
+        calculadoraDeTempo.adiciona(musica);
+        calculadoraDeTempo.exibeTempoTotalDeReproducoes();
         musica.exibeInformacoes();
         musica.classifica(musica);
         musica.exibeClassificacao(musica);
@@ -39,10 +40,10 @@ public class Principal {
         musica2.reproduzir();
         musica2.encerrar();
         musica2.reproduzir();
-        musica2.adiciona(musica2);
-        musica2.adiciona(musica2);
-        musica2.adiciona(musica2);
-        musica2.adiciona(musica2);
+        calculadoraDeTempo.adiciona(musica2);
+        calculadoraDeTempo.adiciona(musica2);
+        calculadoraDeTempo.adiciona(musica2);
+        calculadoraDeTempo.adiciona(musica2);
 
         musica2.curtir();
         musica2.curtir();
@@ -52,16 +53,16 @@ public class Principal {
         musica2.exibeClassificacao(musica2);
         musica2.exibirInformacoesGerais();
         System.out.println("Total de reproduções = " + musica2.getTotalDeReproducoes());
-        musica2.exibeTempoTotalDeReproducoes();
+        calculadoraDeTempo.exibeTempoTotalDeReproducoes();
 
         Podcast podcast = new Podcast();
         podcast.setApresentador("Paulo Silveira");
         podcast.setTitulo("Livros de Tecnologia que amamos - Hipsters Ponto Tech");
         podcast.setDuracao(45);
         podcast.reproduzir();
-        audio.adiciona(podcast);
-        audio.adiciona(podcast);
-        audio.exibeTempoTotalDeReproducoes();
+        calculadoraDeTempo.adiciona(podcast);
+        calculadoraDeTempo.adiciona(podcast);
+        calculadoraDeTempo.exibeTempoTotalDeReproducoes();
         podcast.aumentarVelocidadeDeReproducao();
         podcast.aumentarVelocidadeDeReproducao();
         podcast.aumentarVelocidadeDeReproducao();

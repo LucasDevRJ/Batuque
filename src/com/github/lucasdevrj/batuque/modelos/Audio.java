@@ -2,7 +2,7 @@ package com.github.lucasdevrj.batuque.modelos;
 
 import com.github.lucasdevrj.batuque.calculos.CalculadoraDeTempo;
 
-public class Audio implements CalculadoraDeTempo {
+public class Audio {
 
     private String titulo;
     private int duracao;
@@ -84,23 +84,5 @@ public class Audio implements CalculadoraDeTempo {
                 ------------------------------------------------------------
                 """.formatted(titulo, duracao, totalDeReproducoes, curtidas, getClassificacao());
         System.out.println(informacoes);
-    }
-
-    @Override
-    public int adiciona(Audio audio) {
-        return tempoTotalReproduzido += audio.getDuracao();
-    }
-
-    @Override
-    public void exibeTempoTotalDeReproducoes() {
-        System.out.println("--------------------|Tempo Total Reproduzido|--------------------");
-        if (tempoTotalReproduzido >= 60) {
-            int horas = tempoTotalReproduzido / 60;
-            int minutos = tempoTotalReproduzido % 60;
-            System.out.printf("Você reproduziu %d hora(s) e %d minuto(s) no total.\n", horas, minutos);
-        } else {
-            System.out.printf("Você reproduziu %d minutos no total.\n", tempoTotalReproduzido);
-        }
-        System.out.println("-----------------------------------------------------------------");
     }
 }
