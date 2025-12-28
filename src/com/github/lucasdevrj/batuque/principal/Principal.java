@@ -1,7 +1,6 @@
 package com.github.lucasdevrj.batuque.principal;
 
 import com.github.lucasdevrj.batuque.calculos.CalculadoraDeTempo;
-import com.github.lucasdevrj.batuque.modelos.Audio;
 import com.github.lucasdevrj.batuque.modelos.Musica;
 import com.github.lucasdevrj.batuque.modelos.Podcast;
 
